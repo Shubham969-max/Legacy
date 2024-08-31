@@ -1,0 +1,273 @@
+html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #344E41;
+}
+header{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #d9d0b2;
+    display: grid;
+    grid-template-columns: 10% 18% 10% 52% 10%;
+}
+#logo{
+    margin-left: 10px;
+    height: 16vh;
+}
+.nav{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 550;
+    font-size: x-large;
+    height: 16vh;
+}
+
+.time-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search-box{
+    padding-left: 6%;
+    padding-right: 2%;
+    height: 5.5vh;
+    width: 40vw;
+    border-radius: 5px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: large;
+}
+#search-btn{
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    width: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 53.4%;
+    transition: all 0.1s ease-out;
+}
+#search-btn:hover{
+    cursor: pointer;
+    background-color: #dadada;
+}
+#search-btn-img{
+    height: 4vh;
+}
+
+#item-select{
+    background-color: #fefae0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 8vw;
+    height: 8vh;
+}
+#item-select:hover{
+    cursor: pointer;
+}
+#item-select > a{
+    text-decoration: none;
+    color: black;
+}
+#item{
+    background-color: #A3B18A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 8vw;
+    height: 8vh;
+    transition: all 0.3s ease-out;
+}
+#item:hover{
+    cursor: pointer;
+    background-color: #90a36f;
+    color: #fefae0;
+    box-shadow: 3px 2px 3px #344E41;
+}
+#item > a{
+    text-decoration: none;
+    color: black;
+}
+.login{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+}
+.login > a{
+    text-decoration: none;
+    color: black;
+}
+#user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 5vw;
+    height: 5vh;
+    border: 1px solid black;
+    background-color: #A3B18A;
+    transition: all 0.3s ease-out;
+}
+#user:hover{
+    cursor: pointer;
+    background-color: #fefae0;
+}
+#user-icon{
+    height: 3vh;
+}
+#filter-icon{
+    height: 5vh;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+#opt{
+    padding: 5px;
+    position: absolute;
+    right: 4%;
+    top: 15%;
+    height: 14vh;
+    width: 8vw;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2px;
+}
+#opt > a{
+    display: none;
+    width: 8vw;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-out;
+}
+#opt > a:hover{
+    background-color: rgb(191, 201, 210);
+}
+#filter-icon:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+#filter:hover #opt{
+    display: block;
+    background-color: aliceblue;
+}
+#filter:hover a{
+    display: block;
+}
+
+main{
+    margin: auto;
+    margin-top: 1%;
+    padding: 1%;
+    display: grid;
+    width: 95.5%;
+    height: 100%;
+    overflow-y: scroll;
+}
+main::-webkit-scrollbar{
+    display: none;
+}
+.lawyer-section{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-self: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 30%);
+    gap: 20px;
+    width: 80%;
+    height: 100%;
+}
+.lawyer-pro{
+    padding: 3%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    justify-content: center;
+    border: 2px solid black;
+    background-color:#A3B18A;
+    border-radius: 5px;
+}
+.lawyer-pro > a{
+    text-decoration: none;
+    color: #293d33;
+}
+#lyr-img{
+    padding: 1%;
+    height: 50vh;
+    width: 16vw;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.3s ease-out;
+}
+#lyr-img:hover{
+    box-shadow: 4px 3px 5px #344E41;
+    filter: brightness(90%);
+}
+#lyr-detail{
+    margin-left: 5%;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-family: "Sarabun", sans-serif;
+    transition: all 0.3s ease-out;
+}
+#lyr-detail:hover{
+    color: black;
+}
+#name{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: larger;
+}
+#detail{
+    font-weight: 500;
+}
+
+footer{
+    margin: auto;
+    margin-top: 1%;
+    padding: 0;
+    width: 98%;
+    height: 15%;
+    background-color: #d9d0b2c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Changa", sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #fefae0;
+}
